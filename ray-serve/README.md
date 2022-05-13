@@ -2,4 +2,4 @@
 
 © 2019-2022, Anyscale. All Rights Reserved
 
-<img src ="images/ray_serve.png" width="80%" height="40%">
+<img src ="images/ray-serve.png" width="80%" height="40%">
