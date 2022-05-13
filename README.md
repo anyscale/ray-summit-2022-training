@@ -36,30 +36,30 @@ after training is over.
 If you need to install Anaconda, follow the instructions [here](https://www.anaconda.com/products/distribution).
 If you already have Anaconda installed, consider running conda `upgrade --all.`
 
-`conda create -n ray-summit-training python=3.8`
-`conda activate ray-summit-training`
-`git clone git@github.com:anyscale/ray-summit-2022-training.git`
-`cd to <cloned_dir>`
-`python3 -m pip install -r requirements.txt`
-`python3 -m ipykernel install`
-`jupyter lab`
+1. `conda create -n ray-summit-training python=3.8`
+2. `conda activate ray-summit-training`
+3. `git clone git@github.com:anyscale/ray-summit-2022-training.git`
+4. `cd to <cloned_dir>`
+5. `python3 -m pip install -r requirements.txt`
+6. `python3 -m ipykernel install`
+7. `jupyter lab`
 
 If you are using Apple M1 laptop 🍎 follow the following instructions:
 
-`conda create -n ray-core-tutorial-testing python=3.8`
-`conda activate ray-summit-training`
-`conda install grpcio`
-`python3 -m pip install -r requirements.txt`
-`python3 -m ipykernel install`
-`conda install jupyterlab`
-`jupyter lab`
+1. `conda create -n ray-core-tutorial-testing python=3.8`
+2. `conda activate ray-summit-training`
+3. `conda install grpcio`
+4. `python3 -m pip install -r requirements.txt`
+5. `python3 -m ipykernel install`
+6. `conda install jupyterlab`
+7. `jupyter lab`
 
-### Using Pip
-`git clone git@github.com:anyscale/ray-summit-2022-training.git`
-`cd to <cloned_dir>`
-`python3 -m pip install -r requirements.txt`
-`python3 -m ipykernel install`
-`jupyter lab`
+### Using only pip
+1. git clone git@github.com:anyscale/ray-summit-2022-training.git`
+2. `cd to <cloned_dir>`
+3. `python3 -m pip install -r requirements.txt`
+4. `python3 -m ipykernel install`
+5. `jupyter lab`
 
 Let's have 😜 fun @ Ray Summit 2022!
 
