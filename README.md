@@ -1,2 +1,5 @@
-# ray-summit-2022-training
-This is the GitHub Repo for Ray Summit Training 2022
+# Welcome to Ray Summit 2022 Training 
+
+<img src="images/ray-summit-2022.png" width="80%" height="50%">
+
+
