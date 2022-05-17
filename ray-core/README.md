@@ -3,11 +3,11 @@
 © 2019-2022, Anyscale. All Rights Reserved
 
 <img src ="images/ray-logo.png" width="80%" height="40%">
-### Outline for this Tutorial Lessons 📖
 
-This tutorial has been divided into three modules. Each module will take about an hour, followed
-by hands-on 👩‍💻 exercises in class.
+### Outline for this Tutorial Lesson 📖
 
+Divided into three modules, each module will take about an hour, combined with lecture and followed by 
+hands-on 👩‍💻 exercises in class.
 
 ### Module 1 
  * Lecture 20 mins
