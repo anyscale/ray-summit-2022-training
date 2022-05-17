@@ -16,12 +16,14 @@ Python and AI/ML applications from a laptop to a cluster.
 | 3  | [Ray RLlib](ray-rllib/README.md) |Introduction to Reinforcement Learning and RLlib |
 
 **IMPORTANT NOTE**: Modules and materials in these tutorials have been tested with 
-Ray release `x.y` and supported Python `3.7+`.
+Ray release `x.y` and supported Python `3.7 and 3.8`.
 
 
 ## 👩 Set up instructions for Anyscale 
 
-There is nothing you need to setup, as the Anyscale hosted environment will provide everything.
+There is nothing you need to setup, as the Anyscale hosted environment will provide everything:
+all the notebooks for each class, relevant Python packages, data files, and dependencies are installed
+on the cluster.
 
 However, consider cloning or downloading a release of the tutorial notebooks and 
 supporting software from the [Ray Summit training repo](https://github.com/anyscale/ray-summit-2022-training), 
