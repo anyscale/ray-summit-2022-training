@@ -21,15 +21,14 @@ hands-on 👩‍💻 exercises in class.
    
 ### Module 2
    * Ray Actors Revisited
-   * Ray Actor Patterns
    * Tour of the Ray APIs
    * Distributed multiprocessing.Pool
    * Notebooks & Exercises 
 
 ### Module 3
+   * Brief Introduction to Ray Data
    * Brief Introduction to Ray Tune
    * Brief Introduction to Ray Train
-   * Brief Introduction to Ray Data
 
 ### In this course, you will learn :
   * 👩‍💻Understand what the Ray ecosystem is and why to use it
