@@ -1,2 +1,8 @@
 # Place all your packages dependencies for ray-core, ray-serve, and rllib here
 # These will be installed on the Anyscale cluster
+ray[all]
+torch
+torchvision
+jupyter
+jupyterlab
+tqdm
