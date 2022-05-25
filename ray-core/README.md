@@ -2,7 +2,7 @@
 
 © 2019-2022, Anyscale. All Rights Reserved
 
-<img src ="images/ray-logo.png" width="80%" height="40%">
+<img src ="images/ray-logo.png" width="70%" height="35%">
 
 ### Outline for this Tutorial Lesson 📖
 
