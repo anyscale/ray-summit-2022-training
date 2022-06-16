@@ -3,6 +3,7 @@
 ray[all]
 torch
 torchvision
+tune-sklearn
 jupyter
 jupyterlab
 tqdm
