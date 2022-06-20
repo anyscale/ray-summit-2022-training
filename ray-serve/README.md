@@ -8,22 +8,27 @@ Divided into three modules, each module will take about an hour, combined with l
 hands-on 👩‍💻 exercises in class.
 
 ### Module 1 
+#### Objective: Introduction of concepts, architecture, and Ray Serve APIs and integrations
+
  * Lecture 20 mins
    * What is Ray Serve & Why
    * Ray Serve Architecture & Components
    * Ray Serve Deployment Design Patterns
    * Ray Serve Integrations (MLflow, FastAPI, W & B)
    * What's new in Ray Serve 2.0
-
  * Notebooks & Exercises 
-    * TBD
+    * Ray Serve Model Serving Challenges
+    * Ray Serve Model Composition
+    * Ray Serve and MLflow Integration
    
 ### Module 2
- * TBD
+#### Objective: Understand Deployment patterns, scaling, and ease of deploying a complex graph with ability to scale independent nodes. Learn Deployment Graph APIs to build inference graphs
  * Notebooks & Exercises 
-
+     * Ray Serve Model Composition
+     * Ray Serve Inference Graphs
 ### Module 3
- * TBD
+#### Operationalize Ray Serve with REST API
+##### Objective: Learn to operationalize Ray Serve and tie up all the above modular concepts in an Ray AIR end-to-end example. 
  * Notebooks & Exercises 
 
 ### In this course, you will learn :
@@ -31,8 +36,9 @@ hands-on 👩‍💻 exercises in class.
 * 👩 Understand Ray Serve architecture, components, and flow of requests across replicas
 * 📖 Learn how to use Ray Serve APIs to create, access, and deploy your models and mechanisms to access model deployments via Python APIs and HTTP endpoints
 * 🧑‍💻Implement common model deployment patterns for serving ML models using the inference graph API as a directed acyclic graph (DAG)
-* ⚙️Scale up/down individual components of an inference graph node, utilizing appropriate hardware resources (GPUs/CPUs) and replicas
+* 📈 Scale up/down individual components of an inference graph node, utilizing appropriate hardware resources (GPUs/CPUs) and replicas
 * 🎛 Inspect load and deployments in a Ray dashboard
+* ⚙️  Operationalize Ray Serve with REST API
 
 ### 🎓Prerequisite knowledge ###
 **Level**: Beginners or intermediate ML/DS/MLOps practitioners
