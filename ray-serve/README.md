@@ -26,9 +26,9 @@ hands-on 👩‍💻 exercises in class.
  * Notebooks & Exercises 
      * Ray Serve Model Composition
      * Ray Serve Inference Graphs
+     
 ### Module 3
-#### Operationalize Ray Serve with REST API
-##### Objective: Learn to operationalize Ray Serve and tie up all the above modular concepts in an Ray AIR end-to-end example. 
+#### Objective: Operationalize Ray Serve with REST API 
  * Notebooks & Exercises 
 
 ### In this course, you will learn :
