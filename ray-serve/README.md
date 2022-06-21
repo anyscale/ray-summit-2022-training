@@ -18,14 +18,14 @@ hands-on 👩‍💻 exercises in class.
    * What's new in Ray Serve 2.0
  * Notebooks & Exercises 
     * Ray Serve Model Serving Challenges
-    * Ray Serve Model Composition
     * Ray Serve and MLflow Integration
+    * Ray Serve Model Composition
    
 ### Module 2
-#### Objective: Understand Deployment patterns, scaling, and ease of deploying a complex graph with ability to scale independent nodes. Learn Deployment Graph APIs to build inference graphs
+#### Objective: Understand Deployment patterns and deployment graph APIs to build inference graphs
  * Notebooks & Exercises 
-     * Ray Serve Model Composition
      * Ray Serve Inference Graphs
+     * Ray Serve Model Composition revisited with inference graph APIs
      
 ### Module 3
 #### Objective: Operationalize Ray Serve with REST API 
