@@ -2,14 +2,30 @@
 
 © 2019-2022, Anyscale. All Rights Reserved
 
-<img src="images/RLlib.png" width="50%"
+<img src="images/RLlib.png" width="50%">
 
 ## About This Tutorial
+ 
+<b>Learning objectives.  In this course, you will:</b>
+<ul>
+    <li>📖 Learn the essentials of Reinforcement Learning theory</li>
+    <li><img width="3%" src="images/rllib-logo.png">Understand RLlib architecture and APIs on top of either PyTorch or TF2</li>
+<li>👩‍💻 Create and customize a RLlib environment using OpenAI Gym</li>
+<li>🤖  Train a RL algorithm (PPO) with RLlib, Checkpoint, Save, Load, and Retrain the policy</li>
+<li>🖌️🎨 Use Python decorators to Deploy and Serve the trained RL model using Ray Serve</li>
+<li>🎛  Hyperparameter Tune a RLlib algorithm using Ray Tune</li>
+    </ul>
 
+<b>Target audience:</b> 
+Beginners to Intermediate Data Scientists/ML/RL Engineers 
 
-See the instructions in the [README](README.md) the tutorial overview and setting up your environment to use this tutorial if you want to run this on your laptop.
-
-If you using Anyscale hosted enviroment for this class, then you do not have to do anything. 
+<b>Prerequisite knowledge or skills:</b>
+<ul>
+    <li>Good skills in Python </li>
+    <li>Basics in Deep Learning in TensorFlow2 or PyTorch </li>
+<li>Read this Introduction to Reinforcement Learning: https://www.anyscale.com/blog/an-informal-introduction-to-reinforcement-learning </li>
+</ul>
+ 
 
 |     | Lesson | Description |
 | :-- | :----- | :---------- |
