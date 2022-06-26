@@ -2,7 +2,7 @@
 
 © 2019-2022, Anyscale. All Rights Reserved
 
-<img src="images/RLlib.png" width="50%">
+<img src="images/rllib-logo.png" width="40%">
 
 ## About This Tutorial
  
@@ -26,6 +26,7 @@ Beginners to Intermediate Data Scientists/ML/RL Engineers
 <li>Read this Introduction to Reinforcement Learning: https://www.anyscale.com/blog/an-informal-introduction-to-reinforcement-learning </li>
 </ul>
  
+## Outline for this Tutorial Lessons 📖
 
 |     | Lesson | Description |
 | :-- | :----- | :---------- |
