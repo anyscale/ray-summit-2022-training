@@ -48,7 +48,7 @@ hands-on 👩‍💻 exercises in class.
  * Basic knowledge of machine learning concepts
  * Basic understanding of model serving or scoring
 
-Let's have 😜 fun with Ray Serve! 
+Let's have 😜 fun with Ray Serve! To start with this tutorial, go [here](ex_00_tutorial_overview.ipynb).
 
 
 
