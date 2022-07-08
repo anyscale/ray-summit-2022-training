@@ -15,20 +15,20 @@ hands-on 👩‍💻 exercises in class.
    * Ray Component & Architecture
    * Ray Core API Decorators & Patterns
  * Notebooks & Exercises 
-    * Ray Functions
-    * Ray Objects
-    * Ray Actors
+    * Ray Functions as distribtued stateless tasks
+    * Ray Objects as Distributed future objects 
+    * Ray Actors as distributed stateful services
    
 ### Module 2
-   * Ray Actors Revisited
-   * Tour of the Ray APIs
-   * Distributed multiprocessing.Pool
+   * Ray Actors Revisited: Understand a common pattern used in Ray native libraries 
+   * Tour of the Ray APIs: a quick look at common APIs and some tricks & tips if new to Ray
+   * Distributed multiprocessing.Pool: different strategies to scale Python with Ray
    * Notebooks & Exercises 
 
 ### Module 3
-   * Brief Introduction to Ray Data
-   * Brief Introduction to Ray Tune
-   * Brief Introduction to Ray Train
+   * Brief Introduction to Ray Data: a library for last-mile data ingestio and transformation for ML
+   * Brief Introduction to Ray Tune: A distributed libary to scale your HPO
+   * Brief Introduction to Ray Train: A native Ray library to train ML in a distributed fashion
 
 ### In this course, you will learn :
   * 👩‍💻Understand what the Ray ecosystem is and why to use it
