@@ -1,4 +1,4 @@
-# Machine Learning Model Deployment and Serving with Ray Serve 
+# Machine Learning Model Development & Deployment with Ray AIR 
 
 © 2019-2022, Anyscale. All Rights Reserved
 
@@ -16,6 +16,7 @@ hands-on 👩‍💻 exercises in class.
    * Ray Serve Deployment Design Patterns
    * Ray Serve Integrations (MLflow, FastAPI, W & B)
    * What's new in Ray Serve 2.0
+   * Introduction to Ray AIR for Machine Learning (Ray 2.0)
  * Notebooks & Exercises 
     * Ray Serve Model Serving Challenges
     * Ray Serve and MLflow Integration
@@ -28,7 +29,7 @@ hands-on 👩‍💻 exercises in class.
      * Ray Serve Model Composition revisited with inference graph APIs
      
 ### Module 3
-#### Objective: Operationalize Ray Serve with REST API 
+#### Objective: Introduction to Ray AIR for end-to-end model development and deployment 
  * Notebooks & Exercises 
 
 ### In this course, you will learn :
@@ -38,7 +39,7 @@ hands-on 👩‍💻 exercises in class.
 * 🧑‍💻Implement common model deployment patterns for serving ML models using the inference graph API as a directed acyclic graph (DAG)
 * 📈 Scale up/down individual components of an inference graph node, utilizing appropriate hardware resources (GPUs/CPUs) and replicas
 * 🎛 Inspect load and deployments in a Ray dashboard
-* ⚙️  Operationalize Ray Serve with REST API
+* ⚙️  Inttroduction of Ray AIR for end-to-end machine development/deployment
 
 ### 🎓Prerequisite knowledge ###
 **Level**: Beginners or intermediate ML/DS/MLOps practitioners
