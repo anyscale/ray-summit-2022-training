@@ -7,9 +7,7 @@
 Divided into three modules, each module will take about an hour, combined with lecture and followed by 
 hands-on 👩‍💻 exercises in class.
 
-This is a two-part tutorial. The first part will focus on [Ray Serve](https://docs.ray.io/en/latest/serve/index.html), which is a framework-agnostic and Python-first machine learning model serving library built on Ray. This tutorial will cover how Ray Serve makes it easy to deploy, operate, and scale a machine learning model using Ray Serve APIs. 
-
-The second part is an introduction to [Ray AI Runtime](https://docs.ray.io/en/master/ray-air/getting-started.html). As part of Ray 2.0, Ray AI Runtime (AIR) is an open-source toolkit for building end-to-end ML applications. We will discuss the merits of Ray AIR and how its key concepts and components allow to take your simple and scalable use cases and scale it.
+In this modularized tutorial we will focus on [Ray Serve](https://docs.ray.io/en/latest/serve/index.html), which is a framework-agnostic and Python-first machine learning model serving library built on Ray. This tutorial will cover how Ray Serve makes it easy to deploy, operate, and scale a machine learning model using Ray Serve APIs. 
 
 ### Module 1 
 #### Objective: Introduction of concepts, architecture, and Ray Serve APIs and integrations
@@ -32,7 +30,7 @@ The second part is an introduction to [Ray AI Runtime](https://docs.ray.io/en/ma
      * Ray Serve Inference Graphs
      
 ### Module 3
-#### Objective: Introduction to Ray AIR for end-to-end model development and deployment 
+#### Objective: TBD 
  * Notebooks & Exercises 
 
 ### In this course, you will learn :
@@ -42,7 +40,7 @@ The second part is an introduction to [Ray AI Runtime](https://docs.ray.io/en/ma
 * 🧑‍💻Implement common model deployment patterns for serving ML models using the inference graph API as a directed acyclic graph (DAG)
 * 📈 Scale up/down individual components of an inference graph node, utilizing appropriate hardware resources (GPUs/CPUs) and replicas
 * 🎛 Inspect load and deployments in a Ray dashboard
-* ⚙️  Introduction of Ray AIR for end-to-end machine development/deployment
+* ⚙️  Understand operational aspects serving
 
 ### 🎓Prerequisite knowledge ###
 **Level**: Beginners or intermediate ML/DS/MLOps practitioners
