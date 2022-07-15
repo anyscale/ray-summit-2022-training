@@ -45,7 +45,7 @@ hands-on 👩‍💻 exercises in class.
  * Prior knowledge of Jupyter notebooks helpful
  * Basic knowledge of machine learning concepts
  
-Let's have 😜 fun with Ray! To start with this tutorial, go [here](ex_00_tutorial_overview.ipynb).
+Let's have 😜 fun with Ray! To start with this tutorial, [go here](ex_00_tutorial_overview.ipynb).
 
 
 
