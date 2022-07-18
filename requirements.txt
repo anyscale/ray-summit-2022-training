@@ -4,11 +4,13 @@ ray[default]
 ray[all]
 torch
 torchvision
+scikit-learn
 tune-sklearn
 jupyter
 jupyterlab
 tqdm
 xgboost
+xgboost_ray
 tensorboard
 transformers
 mlflow
