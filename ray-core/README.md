@@ -46,6 +46,7 @@ hands-on 👩‍💻 exercises in class.
  * Basic knowledge of machine learning concepts
  
 Let's have 😜 fun with Ray! To start with this tutorial, [go here](ex_00_tutorial_overview.ipynb).
+Help us improve training. Please fill out this [survey](https://bit.ly/ray-core-summit2022)
 
 
 
