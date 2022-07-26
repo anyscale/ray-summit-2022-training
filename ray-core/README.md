@@ -26,9 +26,9 @@ hands-on 👩‍💻 exercises in class.
    * Notebooks & Exercises 
 
 ### Module 3
-   * Brief Introduction to Ray Data: a library for last-mile data ingestio and transformation for ML
-   * Brief Introduction to Ray Tune: A distributed libary to scale your HPO
-   * Brief Introduction to Ray Train: A native Ray library to train ML in a distributed fashion
+   * Brief Introduction to Ray Data: A gentle introduction to Ray Datasets
+   * Brief Introduction to Ray Tune: A gentle introduction to Ray Tune and hyperparameter optimization HPO
+   * Brief Introduction to Ray AIR: A gentle 10-minute introduction to Ray AI Runitime (Ray AIR)
 
 ### In this course, you will learn :
   * 👩‍💻Understand what the Ray ecosystem is and why to use it
