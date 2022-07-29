@@ -4,6 +4,15 @@
 
 <img src ="images/ray-logo.png" width="70%" height="35%">
 
+An introduction to [Ray](https://www.ray.io/), the system for scaling your Python and machine learning workloads from a laptop to a cluster. 
+We'll start with a hands-on exploration of the core Ray API for distributed workloads, covering basic distributed Ray Core API patterns, and 
+then move on to a quick introduction to Ray's native libraries:
+
+ * Remote functions as tasks
+ * Remote objects as futures
+ * Remote classes as stateful actors
+ * Quick introduction to Ray's native libraries
+
 ### Outline for this Tutorial Lesson 📖
 
 Divided into three modules, each module will take about an hour, combined with lecture and followed by 
@@ -27,8 +36,10 @@ hands-on 👩‍💻 exercises in class.
 
 ### Module 3
    * Brief Introduction to Ray Data: A gentle introduction to Ray Datasets
-   * Brief Introduction to Ray Tune: A gentle introduction to Ray Tune and hyperparameter optimization HPO
    * Brief Introduction to Ray AIR: A gentle 10-minute introduction to Ray AI Runitime (Ray AIR)
+   
+### Extra
+   * Additional and supplemental material to peruse at leisure time.
 
 ### In this course, you will learn :
   * 👩‍💻Understand what the Ray ecosystem is and why to use it
