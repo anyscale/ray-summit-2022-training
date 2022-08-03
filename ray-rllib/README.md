@@ -31,7 +31,13 @@ Beginners to Intermediate Data Scientists/ML/RL Engineers <br>
 </ul>
 
 <br>
- 
+
+## Installation instructions (for local execution)
+
+```angular2html
+pip install ray[rllib,serve] tensorflow torch pyglet pyarrow jupyter
+```
+
 ## Tutorial Lessons 📖
 
 [Let's get Started Learning!](ex_00_rllib_notebooks_table_of_contents.ipynb)
