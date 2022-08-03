@@ -1,4 +1,4 @@
-# Place all your packages dependencies for ray-core, ray-serve, and rllib here
+# Place all your packages dependencies for ray-core, ray-serve, ray-tune, and rllib here
 # These will be installed on the Anyscale cluster
 ray[default]
 ray[all]
@@ -14,3 +14,10 @@ xgboost_ray
 tensorboard
 transformers
 mlflow
+gym==0.21
+pyglet
+tabulate
+opencv
+lz4
+tensorboardX
+tensorflow_probability
