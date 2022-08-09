@@ -35,7 +35,7 @@ Beginners to Intermediate Data Scientists/ML/RL Engineers <br>
 ## Installation instructions (for local execution)
 
 ```angular2html
-pip install ray[rllib,serve] tensorflow torch pyglet pyarrow jupyter
+pip install ray[rllib,tune,serve] gym==0.21 tensorflow torch pyglet pyarrow jupyterlab
 ```
 
 ## Tutorial Lessons 📖
