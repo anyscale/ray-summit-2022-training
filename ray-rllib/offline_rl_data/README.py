@@ -1,9 +1,9 @@
-# To setup a simple offline RL experiment, using RLlib's BC (behavioral cloning) Trainer:
+# To setup a simple offline RL experiment, using RLlib's BC (behavioral cloning) Algorithm:
 
 import os
 import re
 
-from ray.rllib.agents.marwil.bc import BCTrainer
+from ray.rllib.algorithms.bc import BCConfig
 from ray.rllib.examples.env.recommender_system_envs_with_recsim import InterestEvolutionRecSimEnv
 
 # Offline input (JSON) file:
@@ -19,20 +19,23 @@ interest_evolution_env = InterestEvolutionRecSimEnv({
     "convert_to_discrete_action_space": False,
 })
 
-offline_rl_config = {
+offline_rl_config = BCConfig()
+offline_rl_config.offline_data(
     # Specify your offline RL algo's historic (JSON) inputs:
-    "input": [json_output_file],
     # Note: For non-offline RL algos, this is set to "sampler" by default.
     #"input": "sampler",
+    input_=[json_output_file],
+)
 
+offline_rl_config.environment(
     # Since we don't have an environment and the obs/action-spaces are not defined in the JSON file,
     # we need to provide these here manually.
-    "observation_space": interest_evolution_env.observation_space,
-    "action_space": interest_evolution_env.action_space,
-}
+    observation_space=interest_evolution_env.observation_space,
+    action_space=interest_evolution_env.action_space,
+)
 
 # Create a behavior cloning (BC) Trainer.
-bc_trainer = BCTrainer(config=offline_rl_config)
+algo = offline_rl_config.build()
 
 # Perform a single iteration and print out results.
-print(bc_trainer.train())
+print(algo.train())
