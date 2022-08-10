@@ -17,7 +17,8 @@ mlflow
 gym==0.21
 pyglet
 tabulate
-opencv
+opencv-python-headless
+PyOpenGL
 lz4
 tensorboardX
 tensorflow_probability
