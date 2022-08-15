@@ -1,4 +1,4 @@
-from gym.spaces import Discrete, MultiDiscrete
+from gym.spaces import Dict, Discrete, MultiDiscrete
 from ipywidgets import Output
 from IPython import display
 import numpy as np
@@ -23,15 +23,18 @@ class MultiAgentArena(MultiAgentEnv):  # MultiAgentEnv is a gym.Env sub-class
         self.timestep_limit = config.get("timestep_limit", 100)
 
         # Define our observation space (per-agent!).
-        self.observation_space = MultiDiscrete([self.width * self.height,
-                                                self.width * self.height])
+        size = self.width * self.height
+        self.observation_space = Dict({
+            "agent1": MultiDiscrete([size, size]),
+            "agent2": MultiDiscrete([size, size]),
+        })
         # Define our action space (per-agent!).
         # 0=up, 1=right, 2=down, 3=left.
-        self.action_space = Discrete(4)
+        self.action_space = Dict({
+            "agent1": Discrete(4),
+            "agent2": Discrete(4),
+        })
 
-        # Define our agent IDs.
-        self._agent_ids = {"agent1", "agent2"}
-        
         # Reset env.
         self.reset()
 
@@ -40,7 +43,9 @@ class MultiAgentArena(MultiAgentEnv):  # MultiAgentEnv is a gym.Env sub-class
         if config.get("render"):
             self.out = Output()
             display.display(self.out)
-        self._spaces_in_preferred_format = False
+
+        # Define our agent IDs.
+        self._agent_ids = {"agent1", "agent2"}        
 
     def reset(self):
         """Returns initial observation of new episode."""
@@ -74,7 +79,9 @@ class MultiAgentArena(MultiAgentEnv):  # MultiAgentEnv is a gym.Env sub-class
         e.g.
         `action={"agent1": action_for_agent1, "agent2": action_for_agent2}`
         """
-        
+        # Make sure, action dict is complete.
+        assert "agent1" in action and "agent2" in action and len(action) == 2, "ERROR"        
+
         # Increase our time steps counter by 1.
         self.timesteps += 1
         # An episode is "done" when we reach the time step limit.
@@ -166,6 +173,9 @@ class MultiAgentArena(MultiAgentEnv):  # MultiAgentEnv is a gym.Env sub-class
 
     def render(self, mode=None):
 
+        if self.out is None:
+            self.out = Output()
+            display.display(self.out)
         if self.out is not None:
             self.out.clear_output(wait=True)
 
@@ -173,7 +183,6 @@ class MultiAgentArena(MultiAgentEnv):  # MultiAgentEnv is a gym.Env sub-class
         for r in range(self.height):
             print("|", end="")
             for c in range(self.width):
-                field = r * self.width + c % self.width
                 if self.agent1_pos == [r, c]:
                     print("1", end="")
                 elif self.agent2_pos == [r, c]:
@@ -187,8 +196,43 @@ class MultiAgentArena(MultiAgentEnv):  # MultiAgentEnv is a gym.Env sub-class
         print(f"{'!!Collision!!' if self.collision else ''}")
         print("R1={: .1f}".format(self.agent1_R))
         print("R2={: .1f} ({} collisions)".format(self.agent2_R, self.num_collisions))
-        print("Agent1's x/y position={}".format(env.agent1_pos))
-        print("Agent2's x/y position={}".format(env.agent2_pos))
-        print("Env timesteps={}".format(env.timesteps))
+        print("Agent1's x/y position={}".format(self.agent1_pos))
+        print("Agent2's x/y position={}".format(self.agent2_pos))
+        print("Env timesteps={}".format(self.timesteps))
         print()
-        time.sleep(0.25)
+        time.sleep(0.3)
+
+        
+def play_one_episode(*, env=None, algorithm=None):
+    """Renders one episode using random actions of algorithm actions."""
+
+    # Construct the environment object.
+    if env is None:
+        env = MultiAgentArena(config={"render": True})
+
+    with env.out:
+
+        # Call the env's `reset()` method to start a new episode.
+        obs = env.reset()
+        env.render()
+
+        while True:
+            # Compute actions separately for each agent.
+            if algorithm is not None:
+                actions = {
+                    "agent1": algorithm.compute_single_action(obs["agent1"], policy_id="policy1"),
+                    "agent2": algorithm.compute_single_action(obs["agent2"], policy_id="policy2"),
+                }
+            else:
+                actions = env.action_space.sample()
+
+            # Send the action-dict to the env, using the `step()` method.
+            obs, rewards, dones, _ = env.step(actions)
+
+            # Get a rendered image from the env.
+            env.render()
+
+            # If agent1 is done (feel free to check for agent2; they should be done at the same time) ...
+            # -> break out of the loop.
+            if dones["agent1"]:
+                break
