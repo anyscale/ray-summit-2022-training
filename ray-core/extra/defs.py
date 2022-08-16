@@ -1,4 +1,5 @@
 import multiprocessing as mp
+import numpy as np
 
 
 def get_cpu_count():
@@ -10,3 +11,15 @@ def is_prime(n):
         if n % divisor == 0:
             return 0
     return 1
+
+def inefficient_fib(n=None):
+    """Compute intensive calculation for the nth fibonacci number"""
+    if n <= 1:
+        return n
+    return inefficient_fib(n - 1) + inefficient_fib(n - 2)
+
+iterations_count = iterations_count = round(1e4)
+def complex_operation_numpy(index):
+    data = np.ones(iterations_count)
+    val = np.exp(data) * np.sinh(data)
+    return val.sum()
