@@ -1,0 +1,30 @@
+# This file was generated using the `serve build` command on Ray v2.0.0rc1.
+
+import_path: fruit:deployment_graph
+
+runtime_env:
+    working_dir: "https://github.com/ray-project/serve_config_examples/archive/HEAD.zip"
+
+deployments:
+
+- name: MangoStand
+  num_replicas: 1
+  user_config:
+    price: 3
+
+- name: OrangeStand
+  num_replicas: 1
+  user_config:
+    price: 2
+
+- name: PearStand
+  num_replicas: 1
+  user_config:
+    price: 4
+
+- name: FruitMarket
+  num_replicas: 2
+
+- name: DAGDriver
+  num_replicas: 1
+  route_prefix: /
