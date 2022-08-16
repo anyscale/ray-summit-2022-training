@@ -11,7 +11,7 @@ then move on to a quick introduction to Ray's native libraries:
  * Remote functions as tasks
  * Remote objects as futures
  * Remote classes as stateful actors
- * Quick introduction to Ray's native libraries
+ * Quick introduction to Ray's data
 
 ### Outline for this Tutorial Lesson 📖
 
@@ -36,7 +36,6 @@ hands-on 👩‍💻 exercises in class.
 
 ### Module 3
    * Brief Introduction to Ray Data: A gentle introduction to Ray Datasets
-   * Brief Introduction to Ray AIR: A gentle 10-minute introduction to Ray AI Runitime (Ray AIR)
    
 ### Extra
    * Additional and supplemental material to peruse at leisure time.
