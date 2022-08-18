@@ -1,13 +1,13 @@
 # Change the config as stated in the exercise task:
 config.rollouts(
-    num_rollout_workers=5,
+    num_rollout_workers=7,
     num_envs_per_worker=5,
 )
 
 # Undo our tune hyperparameter search:
 config.training(
-    lr=0.0001,
-    train_batch_size=4000,
+    lr=0.0002,
+    train_batch_size=2000,
 )
 
 # Run the experiment for 180 iterations:

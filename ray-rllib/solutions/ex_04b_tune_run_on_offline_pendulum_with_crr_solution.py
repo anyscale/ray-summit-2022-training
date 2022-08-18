@@ -14,5 +14,5 @@ results = tune.run(
     # Create checkpoint every iteration.
     checkpoint_freq=1,
     local_dir="results",
-    verbose=1,
+    verbose=2,
 )
