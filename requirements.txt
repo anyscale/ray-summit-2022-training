@@ -24,3 +24,4 @@ tensorboardX
 tensorflow_probability
 accelerate>=0.8.0
 pydot
+scipy
