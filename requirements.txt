@@ -10,7 +10,7 @@ jupyter
 jupyterlab
 tqdm
 xgboost
-xgboost_ray=0.1.10
+xgboost_ray==0.1.10
 tensorboard
 transformers
 mlflow
