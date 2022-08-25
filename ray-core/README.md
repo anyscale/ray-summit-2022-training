@@ -50,14 +50,12 @@ hands-on 👩‍💻 exercises in class.
 ### 🎓Prerequisite knowledge ###
 **Level**: Beginners or new to Ray
 
- * Familiarity with Python 3.7+ and basic programming concepts: lists, comprehensions, decorators, functions, dictionaries, classes, loops, exceptional handling, etc
+ * Familiarity with Python 3.7+ and basic programming concepts: lists, comprehensions, decorators, functions, dictionaries, classes, loops, 
+exceptional handling, etc
  * Laptop with at least 8-16GB Memory with latest Chrome browser
  * Prior knowledge of Jupyter notebooks helpful
  * Basic knowledge of machine learning concepts
  
 Let's have 😜 fun with Ray! To start with this tutorial, [go here](ex_00_tutorial_overview.ipynb).
-Help us improve training. Please fill out this [survey](https://bit.ly/ray-core-summit2022)
 
-
-
-
+And when you are finished, help us improve training. Please fill out this [survey](https://bit.ly/ray-core-summit2022)
